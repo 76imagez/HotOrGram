@@ -7,4 +7,5 @@ pod "AFNetworking", "~> 2.0"
 pod 'ReactiveCocoa'
 pod 'libextobjc'
 pod 'Mantle'
+pod 'SDWebImage', '~>3.6'
 

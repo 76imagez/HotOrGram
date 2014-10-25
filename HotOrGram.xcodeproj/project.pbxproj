@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		27640D4519FC5ACC007E5F83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27640D4419FC5ACC007E5F83 /* main.m */; };
 		27640D4819FC5ACC007E5F83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27640D4719FC5ACC007E5F83 /* AppDelegate.m */; };
-		27640D4B19FC5ACC007E5F83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27640D4A19FC5ACC007E5F83 /* ViewController.m */; };
 		27640D4E19FC5ACC007E5F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27640D4C19FC5ACC007E5F83 /* Main.storyboard */; };
 		27640D5019FC5ACC007E5F83 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27640D4F19FC5ACC007E5F83 /* Images.xcassets */; };
 		27640D5319FC5ACC007E5F83 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27640D5119FC5ACC007E5F83 /* LaunchScreen.xib */; };
 		27640D5F19FC5ACC007E5F83 /* HotOrGramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27640D5E19FC5ACC007E5F83 /* HotOrGramTests.m */; };
+		27640D6A19FC5D31007E5F83 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27640D6919FC5D31007E5F83 /* GameViewController.m */; };
+		2779D22719FC65D8005D6108 /* InstagramAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2779D22619FC65D8005D6108 /* InstagramAPI.m */; };
+		27A636C719FC669700CCBB0A /* InstagramMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A636C619FC669700CCBB0A /* InstagramMedia.m */; };
 		33D2AF0EFDE60F4F8FA5B5C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3095E74A3E075E49A3FD71E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -33,14 +35,18 @@
 		27640D4419FC5ACC007E5F83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27640D4619FC5ACC007E5F83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27640D4719FC5ACC007E5F83 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		27640D4919FC5ACC007E5F83 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		27640D4A19FC5ACC007E5F83 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		27640D4D19FC5ACC007E5F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27640D4F19FC5ACC007E5F83 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		27640D5219FC5ACC007E5F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		27640D5819FC5ACC007E5F83 /* HotOrGramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotOrGramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27640D5D19FC5ACC007E5F83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27640D5E19FC5ACC007E5F83 /* HotOrGramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotOrGramTests.m; sourceTree = "<group>"; };
+		27640D6819FC5D31007E5F83 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		27640D6919FC5D31007E5F83 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		2779D22519FC65D8005D6108 /* InstagramAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramAPI.h; sourceTree = "<group>"; };
+		2779D22619FC65D8005D6108 /* InstagramAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramAPI.m; sourceTree = "<group>"; };
+		27A636C519FC669700CCBB0A /* InstagramMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramMedia.h; sourceTree = "<group>"; };
+		27A636C619FC669700CCBB0A /* InstagramMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramMedia.m; sourceTree = "<group>"; };
 		299449997DF82E15BE7AC2DD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A8EC316927F2DAA608296E83 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D3095E74A3E075E49A3FD71E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,10 +103,14 @@
 		27640D4119FC5ACC007E5F83 /* HotOrGram */ = {
 			isa = PBXGroup;
 			children = (
+				2779D22519FC65D8005D6108 /* InstagramAPI.h */,
+				2779D22619FC65D8005D6108 /* InstagramAPI.m */,
+				27A636C519FC669700CCBB0A /* InstagramMedia.h */,
+				27A636C619FC669700CCBB0A /* InstagramMedia.m */,
+				27640D6819FC5D31007E5F83 /* GameViewController.h */,
+				27640D6919FC5D31007E5F83 /* GameViewController.m */,
 				27640D4619FC5ACC007E5F83 /* AppDelegate.h */,
 				27640D4719FC5ACC007E5F83 /* AppDelegate.m */,
-				27640D4919FC5ACC007E5F83 /* ViewController.h */,
-				27640D4A19FC5ACC007E5F83 /* ViewController.m */,
 				27640D4C19FC5ACC007E5F83 /* Main.storyboard */,
 				27640D4F19FC5ACC007E5F83 /* Images.xcassets */,
 				27640D5119FC5ACC007E5F83 /* LaunchScreen.xib */,
@@ -278,8 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27640D4B19FC5ACC007E5F83 /* ViewController.m in Sources */,
 				27640D4819FC5ACC007E5F83 /* AppDelegate.m in Sources */,
+				2779D22719FC65D8005D6108 /* InstagramAPI.m in Sources */,
+				27A636C719FC669700CCBB0A /* InstagramMedia.m in Sources */,
+				27640D6A19FC5D31007E5F83 /* GameViewController.m in Sources */,
 				27640D4519FC5ACC007E5F83 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

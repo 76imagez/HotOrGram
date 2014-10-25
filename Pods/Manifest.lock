@@ -65,6 +65,9 @@ PODS:
   - ReactiveCocoa/no-arc (2.3.1)
   - ReactiveCocoa/UI (2.3.1):
     - ReactiveCocoa/Core
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.7.1)
   - SVProgressHUD (1.0)
 
 DEPENDENCIES:
@@ -72,6 +75,7 @@ DEPENDENCIES:
   - libextobjc
   - Mantle
   - ReactiveCocoa
+  - SDWebImage (~> 3.6)
   - SVProgressHUD
 
 SPEC CHECKSUMS:
@@ -79,6 +83,7 @@ SPEC CHECKSUMS:
   libextobjc: d6146fce3ebea986b7f75fcb4c967639200b88b0
   Mantle: d7c5ac734579ec751c58fecbf56189853056c58c
   ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
   SVProgressHUD: 5034c6e22b8c2ca3e09402e48d41ed0340aa1c50
 
 COCOAPODS: 0.34.4
