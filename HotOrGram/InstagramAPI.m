@@ -14,12 +14,10 @@
     if (!self)
         return nil;
     
-    [self loadPopularFeed];
-    
     return self;
 }
 
-- (void)loadPopularFeed {
+- (void)loadPopularFeedWithCompletion:(void(^)())completion {
     NSString* endpoint = @"https://api.instagram.com/v1/media/popular?client_id=6b37654f9a8d4d00a9b2e8cca32a33a2";
     [[AFHTTPRequestOperationManager manager] GET:endpoint parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         if (responseObject) {
@@ -34,18 +32,36 @@
         } else {
             assert(false); // TODO: proper error handling
         }
+        completion();
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
         NSLog(@"Error: %@", error);
         assert(false); // TODO: proper error handling
+        completion();
         
     }];
 }
 
-- (void)loadRandomMediaWithResult:(void (^)(InstagramMedia *))result {
-    // TODO: pull a random item out of the media array until its empty
-    // load more if it is
-    
+- (InstagramMedia*)pickRandomMedia {
+    NSMutableArray* temp = [_media mutableCopy];
+    // pick random item
+    NSUInteger randomIndex = arc4random() % [_media count];
+    InstagramMedia* retVal = _media[randomIndex];
+    // remove it from the array
+    [temp removeObjectAtIndex:randomIndex];
+    self.media = [temp copy];
+    // return it
+    return retVal;
+}
+
+- (void)loadRandomMediaWithResult:(void(^)(InstagramMedia *))result {
+    if (_media.count == 0) { // load if result set empty
+        [self loadPopularFeedWithCompletion:^{
+            result([self pickRandomMedia]);
+        }];
+    } else {
+        result([self pickRandomMedia]);
+    }
 }
 
 @end
