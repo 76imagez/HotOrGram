@@ -15,15 +15,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBar.translucent = NO;
     
     self.insta = [InstagramAPI new];
+    
+    // stylize the TabBar
+    // TODO: move to a better place in code
+    self.tabBarController.tabBar.tintColor = [UIColor colorWithRed:37.0f/255.0f green:95.0f/255.0f blue:252.0f/255.0f alpha:1.0f];
+    self.tabBarController.tabBar.barTintColor = [UIColor colorWithWhite:230.0f/255.0f alpha:1.0f];
+    self.tabBarController.tabBar.translucent = NO;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
     // start game right away
-    [self showNext];
+//    [self showNext];
 }
 
 #pragma mark - Actions

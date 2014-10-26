@@ -48,8 +48,7 @@
     NSUInteger randomIndex = arc4random() % [_media count];
     InstagramMedia* retVal = _media[randomIndex];
     // remove it from the array
-    // TODO: TEMP: testing
-//    [temp removeObjectAtIndex:randomIndex];
+    [temp removeObjectAtIndex:randomIndex];
     self.media = [temp copy];
     // return it
     return retVal;

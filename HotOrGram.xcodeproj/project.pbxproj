@@ -11,6 +11,7 @@
 		275CCC0119FC7B72003ED67B /* HotListCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275CCC0019FC7B72003ED67B /* HotListCollectionViewController.m */; };
 		275CCC0719FC7D4E003ED67B /* HotListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 275CCC0619FC7D4E003ED67B /* HotListCell.m */; };
 		275CCC0B19FC8299003ED67B /* HotMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 275CCC0A19FC8299003ED67B /* HotMedia.m */; };
+		275CCC0F19FC8A2B003ED67B /* PTM55FT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 275CCC0E19FC8A2B003ED67B /* PTM55FT.ttf */; };
 		27640D4519FC5ACC007E5F83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27640D4419FC5ACC007E5F83 /* main.m */; };
 		27640D4819FC5ACC007E5F83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27640D4719FC5ACC007E5F83 /* AppDelegate.m */; };
 		27640D4E19FC5ACC007E5F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27640D4C19FC5ACC007E5F83 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		275CCC0619FC7D4E003ED67B /* HotListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotListCell.m; sourceTree = "<group>"; };
 		275CCC0919FC8299003ED67B /* HotMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotMedia.h; sourceTree = "<group>"; };
 		275CCC0A19FC8299003ED67B /* HotMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotMedia.m; sourceTree = "<group>"; };
+		275CCC0E19FC8A2B003ED67B /* PTM55FT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTM55FT.ttf; sourceTree = "<group>"; };
 		27640D3F19FC5ACC007E5F83 /* HotOrGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotOrGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27640D4319FC5ACC007E5F83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27640D4419FC5ACC007E5F83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				27640D4619FC5ACC007E5F83 /* AppDelegate.h */,
 				27640D4719FC5ACC007E5F83 /* AppDelegate.m */,
 				27640D4F19FC5ACC007E5F83 /* Images.xcassets */,
+				275CCC0E19FC8A2B003ED67B /* PTM55FT.ttf */,
 				27640D5119FC5ACC007E5F83 /* LaunchScreen.xib */,
 				27640D4219FC5ACC007E5F83 /* Supporting Files */,
 			);
@@ -287,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				275CCC0F19FC8A2B003ED67B /* PTM55FT.ttf in Resources */,
 				27640D4E19FC5ACC007E5F83 /* Main.storyboard in Resources */,
 				27640D5319FC5ACC007E5F83 /* LaunchScreen.xib in Resources */,
 				27640D5019FC5ACC007E5F83 /* Images.xcassets in Resources */,
