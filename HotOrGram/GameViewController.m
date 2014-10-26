@@ -3,9 +3,11 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "InstagramAPI.h"
 #import "InstagramMedia.h"
+#import "DataStore.h"
 
 @interface GameViewController ()
 @property (nonatomic, strong) InstagramAPI* insta;
+@property (nonatomic, strong) DataStore* store;
 @property (nonatomic, strong) InstagramMedia* currentMedia;
 @end
 
@@ -35,6 +37,12 @@
 
 #pragma mark - Game
 - (void)vote:(BOOL)hot {
+    if (!_store)
+        _store = [DataStore new];
+    
+    // will continue processing in background to post vote
+    [_store postVoteForMedia:_currentMedia withChoice:hot];
+    
     [self showNext];
 }
 

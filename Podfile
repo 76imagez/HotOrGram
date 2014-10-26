@@ -8,4 +8,5 @@ pod 'ReactiveCocoa'
 pod 'libextobjc'
 pod 'Mantle'
 pod 'SDWebImage', '~>3.6'
+pod 'Parse'
 

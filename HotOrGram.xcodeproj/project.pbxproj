@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		275CCBFE19FC74C9003ED67B /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 275CCBFD19FC74C9003ED67B /* DataStore.m */; };
+		275CCC0119FC7B72003ED67B /* HotListCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275CCC0019FC7B72003ED67B /* HotListCollectionViewController.m */; };
 		27640D4519FC5ACC007E5F83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27640D4419FC5ACC007E5F83 /* main.m */; };
 		27640D4819FC5ACC007E5F83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27640D4719FC5ACC007E5F83 /* AppDelegate.m */; };
 		27640D4E19FC5ACC007E5F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27640D4C19FC5ACC007E5F83 /* Main.storyboard */; };
@@ -30,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		275CCBFC19FC74C9003ED67B /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
+		275CCBFD19FC74C9003ED67B /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
+		275CCBFF19FC7B72003ED67B /* HotListCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotListCollectionViewController.h; sourceTree = "<group>"; };
+		275CCC0019FC7B72003ED67B /* HotListCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotListCollectionViewController.m; sourceTree = "<group>"; };
 		27640D3F19FC5ACC007E5F83 /* HotOrGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotOrGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27640D4319FC5ACC007E5F83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27640D4419FC5ACC007E5F83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +109,8 @@
 		27640D4119FC5ACC007E5F83 /* HotOrGram */ = {
 			isa = PBXGroup;
 			children = (
+				275CCBFC19FC74C9003ED67B /* DataStore.h */,
+				275CCBFD19FC74C9003ED67B /* DataStore.m */,
 				2779D22519FC65D8005D6108 /* InstagramAPI.h */,
 				2779D22619FC65D8005D6108 /* InstagramAPI.m */,
 				27A636C519FC669700CCBB0A /* InstagramMedia.h */,
@@ -115,6 +123,8 @@
 				27640D4F19FC5ACC007E5F83 /* Images.xcassets */,
 				27640D5119FC5ACC007E5F83 /* LaunchScreen.xib */,
 				27640D4219FC5ACC007E5F83 /* Supporting Files */,
+				275CCBFF19FC7B72003ED67B /* HotListCollectionViewController.h */,
+				275CCC0019FC7B72003ED67B /* HotListCollectionViewController.m */,
 			);
 			path = HotOrGram;
 			sourceTree = "<group>";
@@ -293,6 +303,8 @@
 				27A636C719FC669700CCBB0A /* InstagramMedia.m in Sources */,
 				27640D6A19FC5D31007E5F83 /* GameViewController.m in Sources */,
 				27640D4519FC5ACC007E5F83 /* main.m in Sources */,
+				275CCC0119FC7B72003ED67B /* HotListCollectionViewController.m in Sources */,
+				275CCBFE19FC74C9003ED67B /* DataStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
