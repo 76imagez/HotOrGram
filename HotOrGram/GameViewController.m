@@ -53,7 +53,7 @@
         [SVProgressHUD dismiss];
         
         // databind media to UI
-        [_previewImageView sd_setImageWithURL:[NSURL URLWithString:media.image_url]];
+        [_previewImageView sd_setImageWithURL:[NSURL URLWithString:media.imageUrl]];
     }];
 }
 

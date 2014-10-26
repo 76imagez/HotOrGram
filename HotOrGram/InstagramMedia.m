@@ -5,8 +5,8 @@
 + (NSDictionary*)JSONKeyPathsByPropertyKey {
     return @{
              @"mediaId" : @"id",
-             @"image_url" : @"images.standard_resolution.url",
-             @"thumb_url" : @"images.thumbnail.url"
+             @"imageUrl" : @"images.standard_resolution.url",
+             @"thumbUrl" : @"images.thumbnail.url"
              };
 }
 

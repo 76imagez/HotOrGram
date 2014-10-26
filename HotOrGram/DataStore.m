@@ -1,10 +1,16 @@
 #import "DataStore.h"
 #import <Parse/Parse.h>
 #import "InstagramMedia.h"
+#import "HotMedia.h"
+
+@interface DataStore ()
+@property (nonatomic, strong) NSArray* hotlistData;
+@end
 
 @implementation DataStore
 
 + (void)prepare {
+    [HotMedia registerSubclass];
     [Parse setApplicationId:@"YvIl0ikFHeYtfEzpJrIaqwwmODpzygdIfRNLoegb"
                   clientKey:@"3V6TDsbYRpk7JCz4yqobe9SWj65vrNqY0uNI8TIW"];
 }
@@ -25,11 +31,21 @@
             PFObject* vote = [PFObject objectWithClassName:@"Vote"];
             vote[@"mediaId"] = media.mediaId;
             vote[@"link"] = media.link;
-            vote[@"image_url"] = media.image_url;
-            vote[@"thumb_url"] = media.thumb_url;
+            vote[@"imageUrl"] = media.imageUrl;
+            vote[@"thumbUrl"] = media.thumbUrl;
             vote[@"votes"] = isHot ? @1 : @-1;
             [vote saveInBackground];
         }
+    }];
+}
+
+- (void)reloadHotList {
+    // all positive votes ordered highest first
+    PFQuery* query = [PFQuery queryWithClassName:@"Vote"];
+    [query orderByDescending:@"votes"];
+    [query whereKey:@"votes" greaterThan:@0];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        self.hotlistData = objects;
     }];
 }
 
