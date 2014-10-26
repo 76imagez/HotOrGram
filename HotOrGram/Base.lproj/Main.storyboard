@@ -24,7 +24,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JLP-cb-ncX">
                                 <rect key="frame" x="12" y="12" width="296" height="296"/>
-                                <color key="backgroundColor" white="0.81799958881578949" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.81799958881578949" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="JLP-cb-ncX" secondAttribute="height" multiplier="1:1" id="KEI-Um-YdD"/>
                                 </constraints>
